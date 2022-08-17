@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazo Punta Tensión</title>
+    <link rel="icon" href="https://printemps.com.ar/media/favicon/default/favicon.png" type="image/x-icon">
+
+    <style>
+        html {
+            align-items: center;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #05b14f;
+            padding-top: 50px;
+            margin: 0;
+            border: none;
+        }
+
+        footer {
+            text-align: left;
+            background-color: #f0eff5;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            bottom: 0px;
+            width: 100%;
+            position: block;
+        }
+
+        .Copy {
+            padding-left: 60px;
+            margin: 0;
+            font-family: 'Gotham-Medium', sans-serif, Helvetica, Arial;
+            font-size: 10px;
+            color: #777777;
+        }
+
+        .div1 {
+            padding-top: 5px;
+            padding-bottom: 8px;
+            padding-left: 10% !important;
+            padding-right: 10% !important;
+        }
+
+        .image {
+            width: 20%;
+            height: 20%;
+        }
+
+        .SectionTitulo {
+            font-size: 10.50vh;
+        }
+
+        .Titulo {
+            text-align: center;
+            font-size: 66%;
+            line-height: 85px;
+        }
+
+        .classH1 {
+            font-family: 'Gotham Bold', Helvetica, Arial, Lucida, sans-serif;
+            color: #00514d;
+            margin: 0;
+            padding-left: 25%;
+            padding-right: 25%;
+        }
+
+        .SubT {
+            font-family: 'Gotham Book Font', Helvetica, Arial, Lucida, sans-serif;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .Paraph {
+            text-align: center;
+            font-family: 'Gotham Book Font', Helvetica, Arial, Lucida, sans-serif !important;
+            font-size: 18px;
+        }
+
+        #nav2 {
+            background-color: #05b14f;
+            padding-top: 0px;
+            margin: 0;
+            border: none;
+        }
+
+        .ImagenToldo {
+            display: flex;
+            justify-content: right;
+            padding-left: 15%;
+            padding-right: 15%;
+            font-size: 100%;
+        }
+
+        .TextoToldo {
+            width: 45%;
+            height: 70%;
+            /*display: block;*/
+            padding-left: 0px;
+            /*justify-content: center !important;
+            /*align-items: center;*/
+            text-align: left;
+            list-style: none;
+            font-family: 'Gotham Book Font', Helvetica, Arial, Lucida, sans-serif !important;
+            /*font-weight: 400;*/
+            color: #666;
+            line-height: 25px;
+            letter-spacing: 0.001rem;
+        }
+
+        .img-toldo {
+            width: 40%;
+            height: 20%;
+            margin-top: 20px;
+            margin-right: 60px;
+        }
+
+        body section div ul {
+            padding-top: 5%;
+        }
+
+        .componentes {
+            text-align: center;
+            padding-top: 5%;
+            font-size: 20px;
+            font-family: 'Gotham Bold', Helvetica, Arial, Lucida, sans-serif;
+            color: #00514d;
+            padding-left: 10%;
+            padding-right: 10%;
+            color: black;
+        }
+
+        .titulo-componentes {
+            color: black;
+        }
+
+        .imagen-partes {
+            width: 100%;
+            display: flex;
+        }
+
+        .image-p {
+            width: 50%;
+        }
+
+        .partes {
+            padding-left: 15%;
+            padding-right: 15%;
+            display: grid;
+        }
+
+        .img-armandito {
+            width: 90%;
+        }
+
+        /*       .nosotros {
+            text-align: center;
+            padding-top: 5%;
+            font-size: 25px;
+            font-family: 'Gotham Bold', Helvetica, Arial, Lucida, sans-serif;
+            color: #00514d;
+        }
+
+        .titulo-nosotros {
+            font-size: 38px;
+            margin-bottom: 0px;
+        }
+
+        .subt-nosotros {
+            font-size: 60%;
+            margin-top: 5px;
+            color: #333;
+            font-family: Open Sans, Arial, sans-serif;
+        }
+
+        .texto-nosotros {
+            list-style: none;
+            font-size: 15px;
+            padding-top: 25px;
+            padding-left: 10%;
+            padding-right: 10%;
+            color: #666;
+            font-family: Open Sans, Arial, sans-serif;
+        }*/
+
+        .button-print {
+            width: 25%;
+        }
+
+        .armado {
+
+            text-align: center;
+            font-family: 'Gotham Bold', Helvetica, Arial, Lucida, sans-serif;
+            color: #666;
+        }
+
+        .texto-armado {
+            font-size: 1.5rem;
+        }
+
+        .video-armado {
+            max-width: 100%;
+        }
+
+        .explicacion {
+            text-align: center;
+            font-family: 'Gotham Book Font', Helvetica, Arial, Lucida, sans-serif;
+        }
+
+        .lista-explicacion {
+            font-size: 24px;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .tilde {
+            color: #05b14f;
+            display: inline-flex;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+
+        .expli {
+            font-size: 2rem;
+        }
+
+        .subt {
+            padding-bottom: 2%;
+        }
+
+        .redireccion {
+            padding-top: 5%;
+            text-align: center;
+            font-family: 'Gotham Bold', Helvetica, Arial, Lucida, sans-serif;
+            padding-bottom: 5%;
+            color: #00514d;
+        }
+
+        .titulo-redireccion {
+            font-size: 33px;
+        }
+
+        .url {
+            width: 8%;
+
+        }
+
+
+
+        .miboton {
+            box-shadow: 0px 10px 14px -7px #3E7327;
+            background: linear-gradient(to bottom, #77B55A 5%, #72B352 100%);
+            background-color: #77b55a;
+            border-radius: 4px;
+            border: 1px solid #4B8F29;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: "Gotham Bold", Helvetica, Arial, Lucida, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 6px 12px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #5B8A3C;
+        }
+
+        .miboton:hover {
+            background: linear-gradient(to bottom, #72B352 5%, #77B55A 100%);
+            background-color: #72b352;
+        }
+
+        .mibotton:active {
+            position: relative;
+            top: 1px;
+        }
+
+        .video {
+            width: 854px;
+            height: 480px;
+        }
+
+        .apertura {
+            text-align: center;
+            font-family: Open Sans, Arial, sans-serif;
+            color: #666;
+            font-size: 30px;
+        }
+
+        .redi {
+            padding-bottom: 3%;
+        }
+
+        .leyenda {
+            padding-bottom: 3%;
+            text-align: center;
+            font-family: 'Gotham Book Font', Helvetica, Arial, Lucida, sans-serif;
+            color: #666;
+        }
+
+        .hr {
+
+
+            border-color: lightgrey;
+            background-color: #05b14f;
+            height: 0px;
+            width: 70%;
+
+        }
+
+        .renders {
+            text-align: center;
+
+        }
+
+        .ren {
+            width: 100%;
+            display: flex;
+
+        }
+
+
+        .img-render {
+            width: 70%;
+            padding-top: 3%;
+            display: inline-block;
+
+        }
+
+        @media (max-width:375px) {
+            .div1 {
+                padding-top: 20px;
+                padding-bottom: 8px;
+                padding-left: 15% !important;
+                padding-right: 15% !important;
+            }
+
+            #nav2 {
+                background-color: #05b14f;
+                padding-top: 3px;
+                margin: 0;
+                border: none;
+            }
+
+            nav {
+                background-color: #05b14f;
+                padding-top: 0px;
+                margin: 0;
+                border: none;
+            }
+
+            .image {
+                width: 65%;
+            }
+
+            .Titulo {
+                padding-top: 10%;
+                text-align: center;
+                font-size: 70%;
+                line-height: 50px;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-bottom: 5%;
+
+            }
+
+            .classH1 {
+                font-family: 'Gotham Bold', Helvetica, Arial, Lucida, sans-serif;
+                color: #00514d;
+                margin: 0;
+            }
+
+            .SectionTitulo {
+                font-size: 4.50vh;
+            }
+
+            .div2 {
+                text-align: center;
+            }
+
+            body section div ul {
+                font-size: 12px;
+            }
+
+            .ImagenToldo {
+                display: block;
+                justify-content: right;
+                padding-left: 15%;
+                padding-right: 15%;
+                font-size: 100%;
+            }
+
+            .TextoToldo {
+                width: 100%;
+                height: 50%;
+                /*display: block;*/
+                padding-left: 0px;
+                /*justify-content: center !important;
+                /*align-items: center;*/
+                text-align: left;
+                list-style: none;
+                font-family: 'Gotham Book Font', Helvetica, Arial, Lucida, sans-serif !important;
+                /*font-weight: 400;*/
+                color: #666;
+                line-height: 25px;
+                letter-spacing: 0.001rem;
+            }
+
+            .img-toldo {
+                width: 100%;
+                height: 30%;
+                margin-right: 0px;
+            }
+
+            body section div ul {
+                padding-top: 0%;
+            }
+
+            .imagen-partes {
+                width: 100%;
+                display: block;
+            }
+
+            .image-p {
+                width: 100%;
+            }
+
+            .video {
+                max-width: 370px;
+            }
+
+            .partes {
+                padding-top: 3%;
+                padding-left: 10%;
+                padding-right: 10%;
+                display: grid;
+            }
+
+            .lista-explicacion {
+                font-size: 20px;
+                list-style: none;
+                text-decoration: none;
+                padding: 0 0 0 0;
+                margin-bottom: 10%;
+            }
+
+            .expli {
+                font-size: 1.3rem;
+            }
+
+            .subt {
+                padding-bottom: 5%;
+            }
+
+            .redireccion {
+                padding-top: 40%;
+                text-align: center;
+                font-family: 'Gotham Bold', Helvetica, Arial, Lucida, sans-serif;
+                padding-bottom: 40%;
+                color: #00514d;
+            }
+
+            .titulo-redireccion {
+                font-size: 33px;
+            }
+
+            .url {
+                width: 40%;
+
+            }
+
+            .redi {
+                padding-bottom: 20%;
+            }
+
+            .texto-armado {
+                font-size: 1.3rem;
+            }
+
+            .img-armandito {
+                padding-top: 10%;
+                width: 100%;
+            }
+
+            .ren {
+                width: 100%;
+                display: block;
+            }
+
+            .img-render {
+                width: 70%;
+                padding-top: 0%;
+                display: inline-block;
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+
+            }
+
+
+        }
+
+        @media (max-width:450px) {
+            .div1 {
+                padding-top: 20px;
+                padding-bottom: 8px;
+                padding-left: 15% !important;
+                padding-right: 15% !important;
+            }
+
+            #nav2 {
+                background-color: #05b14f;
+                padding-top: 3px;
+                margin: 0;
+                border: none;
+            }
+
+            nav {
+                background-color: #05b14f;
+                padding-top: 0px;
+                margin: 0;
+                border: none;
+            }
+
+            .image {
+                width: 65%;
+            }
+
+            .Titulo {
+                padding-top: 10%;
+                text-align: center;
+                font-size: 100%;
+                line-height: 50px;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-bottom: 5%;
+
+            }
+
+            .classH1 {
+                font-family: 'Gotham Bold', Helvetica, Arial, Lucida, sans-serif;
+                color: #00514d;
+                margin: 0;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            .SectionTitulo {
+                font-size: 4.50vh;
+            }
+
+            .div2 {
+                text-align: center;
+            }
+
+            body section div ul {
+                font-size: 12px;
+            }
+
+            .ImagenToldo {
+                display: block;
+                justify-content: right;
+                padding-left: 15%;
+                padding-right: 15%;
+                font-size: 100%;
+            }
+
+            .TextoToldo {
+                width: 100%;
+                height: 50%;
+                /*display: block;*/
+                padding-left: 0px;
+                /*justify-content: center !important;
+                /*align-items: center;*/
+                text-align: left;
+                list-style: none;
+                font-family: 'Gotham Book Font', Helvetica, Arial, Lucida, sans-serif !important;
+                /*font-weight: 400;*/
+                color: #666;
+                line-height: 25px;
+                letter-spacing: 0.001rem;
+            }
+
+            .img-toldo {
+                width: 100%;
+                height: 30%;
+                margin-right: 0px;
+            }
+
+            body section div ul {
+                padding-top: 0%;
+            }
+
+            .imagen-partes {
+                width: 100%;
+                display: block;
+            }
+
+            .image-p {
+                width: 100%;
+            }
+
+            .video {
+                max-width: 350px;
+            }
+
+            .partes {
+                padding-top: 3%;
+                padding-left: 10%;
+                padding-right: 10%;
+                display: grid;
+            }
+
+            .lista-explicacion {
+                font-size: 20px;
+                list-style: none;
+                text-decoration: none;
+                padding: 0 0 0 0;
+                margin-bottom: 10%;
+            }
+
+            .expli {
+                font-size: 1.3rem;
+            }
+
+            .subt {
+                padding-bottom: 5%;
+            }
+
+            .redireccion {
+                padding-top: 40%;
+                text-align: center;
+                font-family: 'Gotham Bold', Helvetica, Arial, Lucida, sans-serif;
+                padding-bottom: 40%;
+                color: #00514d;
+            }
+
+            .titulo-redireccion {
+                font-size: 33px;
+            }
+
+            .url {
+                width: 40%;
+
+            }
+
+            .redi {
+                padding-bottom: 20%;
+            }
+
+            .texto-armado {
+                font-size: 1.3rem;
+            }
+
+            .img-armandito {
+                padding-top: 10%;
+                width: 100%;
+            }
+
+            .ren {
+                width: 100%;
+                display: block;
+            }
+
+            .img-render {
+                width: 70%;
+                padding-top: 0%;
+                display: inline-block;
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <!-- Navbar -->
+        <nav>
+
+        </nav>
+        <div>
+            <div class="div1">
+                <div class="div2">
+                    <img src="https://printemps.com.ar/skin/frontend/default/printemps/images/logoPrint.svg"
+                        class="image" alt="">
+                </div>
+            </div>
+        </div>
+        <nav id="nav2">
+
+        </nav>
+    </section>
+
+
+    <section class="SectionTitulo">
+        <!-- Titulo -->
+        <div class="Titulo">
+            <h1 class="classH1">Toldo Brazo Recto con Tensión</h1>
+        </div>
+        <div>
+            <div>
+                <p class="SubT">
+                    Único en el mercado
+                </p>
+            </div>
+            <div>
+                <span>
+
+                    <p class="Paraph">
+                        El toldo de toda la vida pero ahora con mejoras
+                    </p>
+
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="Cuerpo">
+        <div class="ImagenToldo">
+            <img class="img-toldo"
+                src="https://printemps.nyc3.cdn.digitaloceanspaces.com/images/Landing/croquies-min.png" alt="">
+            <ul class="TextoToldo">
+
+                <li>
+                    <p>Presentamos el toldo más demandado de la industria por su gran resistencia y su relación
+                        precio-calidad.</p>
+                </li>
+
+                <li>
+                    <p>Los brazos con tensión mejoran el comportamiento de la lona ante el viento mediante un resorte
+                        colocado en el interior del brazo.</p>
+                </li>
+
+                <li>
+                    <p>Esta tensión hace que la barra de frente no se mueva por la fuerza del viento, permitiendo que la
+                        tela esté en constante tensión.</p>
+                </li>
+
+                <li>
+                    <p>El toldo de punto recto es un modelo con gran funcionalidad, sencillo y de rápida instalación.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <br><br>
+
+    <section class="componentes">
+        <div>
+            <div class="titulo-componentes">
+                <h4>LA REINVENCIÓN ES PARTE DE NUESTRO ADN</h4>
+                <h4>IMPULSAMOS LA TRANSFORMACIÓN CON NUESTROS MODELOS 3D</h4>
+            </div>
+        </div>
+
+        <div class="partes">
+            <div>
+                <div>
+                    <div style="display:flex;">
+                        <p style="color:black;">COMPONENTES DE TOLDO BRAZO RECTO CON TENSIÓN</p>
+                    </div>
+                    <div class="imagen-partes">
+
+
+                        <img class="image-p"
+                            src="https://printemps.nyc3.cdn.digitaloceanspaces.com/images/Landing/componentes.png"
+                            alt="">
+
+                        <div class="imagen-partes">
+                            <div style="width:100%;">
+                                <img class="img-armandito"
+                                    src="https://printemps.nyc3.cdn.digitaloceanspaces.com/images/Landing/Armandito3D-min.png"
+                                    alt="">
+                                <iframe loading="lazy" title="Brazo recto con tensión" frameborder="0" width="100%"
+                                    height="400" allowfullscreen="" mozallowfullscreen="true"
+                                    webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                                    xr-spatial-tracking="" execution-while-out-of-viewport=""
+                                    execution-while-not-rendered="" web-share=""
+                                    src="https://sketchfab.com/models/149631c9ed4d441bb8ca630c3fc53ac4/embed?autostart=1&amp;dnt=1"
+                                    data-rocket-lazyload="fitvidscompatible"
+                                    data-lazy-src="https://sketchfab.com/models/149631c9ed4d441bb8ca630c3fc53ac4/embed?autostart=1&amp;dnt=1"
+                                    data-ll-status="loaded" class="entered lazyloaded"> </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="armado">
+        <div>
+            <div>
+                <div class="texto-armado">
+                    <h2 style="padding-top:5%;">¿Cómo armarlo?</h2>
+                    <h2>El video instructivo más completo de toda la web</h2>
+                </div>
+                <div>
+                    <iframe class="video" loading="lazy" title="Armado de toldo brazo con tensión de Printemps"
+                        src="https://www.youtube.com/embed/optJi1bY5y8?feature=oembed" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="" data-rocket-lazyload="fitvidscompatible"
+                        data-lazy-src="https://www.youtube.com/embed/optJi1bY5y8?feature=oembed" data-ll-status="loaded"
+                        class="entered lazyloaded" name="fitvid0"></iframe>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--
+    <section class="nosotros">
+        <div>
+            <div>
+                <h2 class="titulo-nosotros">Pasión que vivimos a través de nuestros productos</h2>
+                <p class="subt-nosotros">Además de cortinas y toldos, nos enfocamos en lo más importante, nuestros
+                    clientes.</p>
+            </div>
+
+            <div>
+                <ul class="texto-nosotros">
+                    <li>
+                        Hace más de 25 años cambiamos la forma de comercializar toldos, con el tiempo pudimos demostrar
+                        que se puede favorecer a todos los eslabones del circuito manteniendo la calidad y sobre todo
+                        logramos tener los precios más bajos del mercado, con la convicción intacta de que todos podemos
+                        salir ganando en este juego.
+                    </li>
+                    <br>
+                    <li>
+                        Continuamos superándonos día a día, con la capacidad de trabajo intacta
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <img class="button-print"
+                    src="https://printemps.nyc3.cdn.digitaloceanspaces.com/images/Landing/Armando7.png" alt="">
+            </div>
+        </div>
+    </section>
+
+-->
+
+
+    <section class="apertura">
+        <div style="padding-top: 5%;">
+            <p>Amplia apertura, logrando una doble función</p>
+        </div>
+        <div>
+            <video class="video" autoplay loop>
+                <source
+                    src="https://printemps.nyc3.cdn.digitaloceanspaces.com/images/Landing/Brazo%20con%20Tensi%C3%B3n%20punto%20recto%20%28youtube%29.mp4">
+            </video>
+
+        </div style="padding-bottom: 5%;">
+    </section>
+
+
+    <section class="explicacion">
+        <div>
+            <div>
+                <ul class="lista-explicacion">
+                    <li class="subt"><span class="expli">¿POR QUÉ ESTE TOLDO?</span></li>
+                    <li>
+                        <p class="tilde">✔</p> GRAN APERTURA
+                    </li>
+                    <li>
+                        <p class="tilde">✔</p> DOBLE FUNCIÓN EN UNA
+                    </li>
+                    <li>
+                        <p class="tilde">✔</p> GRAN RESISTENCIA
+                    </li>
+                    <li>
+                        <p class="tilde">✔</p> MUY RÁPIDO Y FÁCIL DE ARMAR
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="lista-explicacion">
+                    <li class="subt"><span class="expli">LA RESPUESTA ES <strong>SÍ</strong> PARA
+                            LAS SIGUIENTES PREGUNTAS</span></li>
+                    <li>
+                        <p class="tilde">✔</p> ¿Puedo usar máquinas nacionales e importadas?
+                    </li>
+                    <li>
+                        <p class="tilde">✔</p> ¿Los insumos están disponibles en color blanco y negro?
+                    </li>
+                    <li>
+                        <p class="tilde">✔</p> ¿Se puede usar con barra de frente TP2 / TP3 o tubo galvanizado de 1-¼”?
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="lista-explicacion">
+                    <li class="subt"><span class="expli"><strong> RECUERDA QUE: </strong></span></li>
+                    <li>
+                        <p>❌ NO CONFECCIONAMOS </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="redireccion">
+        <div>
+            <div>
+                <h2 class="titulo-redireccion"><strong>Suscribete con un clic a esta lista de correos</strong></h2>
+            </div>
+            <div>
+                <p> Para conocernos más y recibe un cupon del 20% OFF para el <strong>BRAZO CON TENSIÓN</strong></p>
+            </div>
+            <div class="redi">
+                <a id="pop" href="https://printemps33840.activehosted.com/f/3%22" target="#">
+                    <img class="url"
+                        src="https://printemps.nyc3.cdn.digitaloceanspaces.com/images/Landing/armandbot-min.png" alt="">
+                        <div>
+                            <a class="btn btn-primary btn-lg miboton" href="#" role="button" id="boton">QUIERO SUSCRIBIRME!
+                                &raquo;</a>
+                    </a>
+                </div>
+            </div>
+
+    </section>
+
+    <section class="leyenda">
+        <div>
+            <hr class="hr">
+            <p>Creamos, creemos, crecemos…</p>
+        </div>
+
+    </section>
+
+    <section class="Fot">
+        <footer>
+            <h2 class="Copy"> © 2022 Printemps S.R.L. Todos los derechos reservados.</h2>
+        </footer>
+    </section>
+
+    <script type="text/javascript" charset="utf-8">
+        // seleccionamos el enlace
+        var boton = document.getElementById("boton");
+    
+        // cuando se pulsa en el enlace
+        boton.onclick = function(e) {
+        // evitamos la acción por defecto
+        console.log(boton.onclick)
+        e.preventDefault();
+        // creamos una etiqueta script
+        var s = document.createElement("script");
+        // indicamos en el atributo src el fichero que quieres cargar
+        s.src = "https://printemps33840.activehosted.com/f/embed.php?id=5";
+        // lo añadimos al documento (y se ejecuta automaticamente)
+        document.querySelector("body").appendChild(s);
+        // borra el script del documento (para evitar basura si se ejecuta multiples veces)
+        s.remove();
+        }
+        </script>
+</body>
+
+</html>
